@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Full Pack 2025';
+    src: "../css/fonts/full Pack 2025.ttf" format('truetype');     
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap');
+
+//font-family: 'Poppins', sans-serif;
+//font-family: 'Rubik', sans-serif;
+
+.separador {
+    font-family: 'Full Pack 2025';
+    color: black;
+    &--grande {
+        font-size: 1.8rem;
+    }
+    &--chico {
+        font-size: 1.4rem;
+    }
+}
+
+.titulo {
+    font-family: 'Rubik';
+    font-size: 2rem;
+}
+
+.contenido {
+    font-family: 'Poppins';
+}

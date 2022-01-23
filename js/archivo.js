@@ -1,0 +1,1 @@
+$("i").addClass("hvr-grow");
