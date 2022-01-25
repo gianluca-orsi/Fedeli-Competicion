@@ -17,7 +17,7 @@
         <p class="level-item"><a href="./pages/pilotos.html">Pilotos</a></p>
         <div class="level-item">
             <a href="#">
-                <img style="width: 300px; height: 125px;" src="./images/logos/rsz_fedeli.png" alt="Logo">
+                <img class="logo-fc" src="./images/logos/rsz_fedeli.png" alt="Logo">
             </a>
         </div>
         <p class="level-item"><a href="./pages/galeria.html">Galeria</a></p>
@@ -38,6 +38,42 @@
 
         <div class="notification">
             This container is <strong>fluid</strong>: it will have a 20px gap on either side, on any viewport size.
+        </div>
+
+        <!-- temporizador prox carrera autos -->
+        <div class="columns is-centered is-justify-content-center m-3" id="contenedorTemporizadorKartAutos">
+            <div class="column has-text-centered is-4 has-background-white">
+                <div id="proximaCarreraAutos">
+                    <p class="categoria">Categorias Agrupadas Federadas</p>
+                    <p class="temporizador" id="proxCarreraAutos">6/3 - Autódromo Municipal "Juan Manuel Fangio" - Rosario</p>
+                </div>
+                <div class="divider">
+                    <i class="fas fa-angle-double-down"></i>
+                </div>
+                <div id="cuentaAtrasAutos">
+                    <p class="temporizador" id="diasAutos"></p>
+                    <p class="temporizador" id="horasAutos"></p>
+                    <p class="temporizador" id="minutosAutos"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- temporizador prox carrera kart -->
+        <div class="columns is-centered is-justify-content-center m-3" id="contenedorTemporizadorKart">
+            <div class="column has-text-centered is-4 has-background-white">
+                <div id="proximaCarreraKart">
+                    <p class="categoria">Karting</p>
+                    <p class="temporizador" id="proxCarreraKart">22/3 - FECHA PARA OCUPAR ESPACIO</p>
+                </div>
+                <div class="divider">
+                    <i class="fas fa-angle-double-down"></i>
+                </div>
+                <div id="cuentaAtrasKart">
+                    <p class="temporizador" id="diasKart"></p>
+                    <p class="temporizador" id="horasKart"></p>
+                    <p class="temporizador" id="minutosKart"></p>
+                </div>
+            </div>
         </div>
     </div>    
 

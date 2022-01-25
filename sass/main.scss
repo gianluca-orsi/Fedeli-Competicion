@@ -1,10 +1,24 @@
 @import "../bulma/bulma";
 @import "./fonts.scss";
 @import "./hover.scss";
+@import "./mediaqueries.scss";
 
-nav {
-    font-family: 'Full Pack 2025';
-    font-size: 1.4rem;
+html, body {max-width: 100%; overflow-x: hidden;}
+
+.contenedorTemporizadorKart {
+    border: 1px solid black;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+nav p a {
+    @extend .hvr-skew;
 }
 
 a {
@@ -29,7 +43,6 @@ a {
 }
 
 .icon {
-    font-size: 2.4rem;
     &--rojo {
         color: red;
     }

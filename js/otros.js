@@ -1,6 +1,6 @@
 var fotosOtros = new Array()
 
-for (i = 0; i <= 42; i++) {
+for (i = 0; i <= 29; i++) {
     fotosOtros[i] = '../images/fotos/Otros/'+ i +'.jpg';
 }
 let contador = 2;
@@ -35,6 +35,7 @@ function galeria () {
             $(columna).addClass("column is-3 has-text-centered");
             foto = $("<img>");
             $(foto).attr("src", fotosOtros[contador]);
+            $(foto).addClass("hvr-grow-shadow");
             $(columna).append(foto);
             $(conjuntoColumnas).append(columna);
             foto = "";

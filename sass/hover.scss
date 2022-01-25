@@ -2894,8 +2894,9 @@
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    z-index: 500;
+    position: relative;
 }
-
 /* Box Shadow Outset */
 .hvr-box-shadow-outset {
     display: inline-block;

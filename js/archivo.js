@@ -1,27 +1,48 @@
 $("i").addClass("hvr-grow");
+$(".temporizador").addClass("is-inline-block");
 
+var proxFechaAutos = new Date ("Mar 6, 2022, 00:00:00").getTime();
+var funcionAutos = setInterval(function(){
+    var tiempoActual = new Date().getTime();
+    var tiempoRestante = proxFechaAutos - tiempoActual;
 
-//function galeria
+    var diasRestantesAutos = Math.floor (tiempoRestante / (1000 * 60 * 60 *24));
+    var horasRestantesAutos = Math.floor ((tiempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutosRestantesAutos = Math.floor ((tiempoRestante % (1000 * 60 * 60)) / (1000 * 60));
 
-var fotosFranco = 16;
-var fotosRamiro = 66;
-var fotosGaspar = 35;
-var fotosMatias = 3;
-var fotosJuampi = 22;
-var fotosOtros = 43;
+    $("#diasAutos").html(diasRestantesAutos + " Dias");
+    $("#horasAutos").html(horasRestantesAutos + " Horas");
+    $("#minutosAutos").html(minutosRestantesAutos + " Minutos");
 
-function galeria () {
-    for (i = i; i<= fotosFranco.length; i++) {
-        let contador = 1;
-        var galeria = $("<div></div>").addClass("column is-4 divFotosColumnasGaleria");
-        var foto = URL("../images/fotos/Franco/foto ("+ i +").jpg");
-        $(".divFotosColumnasGaleria").append(foto);
-        contador +=1;
-        if (contador == 4){
-            let columnas = $("<div></div>").addClass("columns has-text-centered is-centered divFotosColumnas");
-            $(".divFotosColumnas").append(galeria);
-            $(".divFotos").append(columnas);
-            contador = 1;
-        }
+    if (tiempoRestante < 0) {
+        clearInterval(funcionAutos)
+        $("#diasAutos").html("");
+        $("#horasAutos").html("HOY");
+        $("#minutosAutos").html("");
     }
-}
+},1000)
+
+var proxFechaKart = new Date ("Mar 22, 2022, 00:00:00").getTime();
+var funcionKart = setInterval(function(){
+    var tiempoActual = new Date().getTime();
+    var tiempoRestanteKart = proxFechaKart - tiempoActual;
+
+    var diasRestantesKart = Math.floor (tiempoRestanteKart / (1000 * 60 * 60 *24));
+    var horasRestantesKart = Math.floor ((tiempoRestanteKart % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutosRestantesKart = Math.floor ((tiempoRestanteKart % (1000 * 60 * 60)) / (1000 * 60));
+
+    $("#diasKart").html(diasRestantesKart + " Dias");
+    $("#horasKart").html(horasRestantesKart + " Horas");
+    $("#minutosKart").html(minutosRestantesKart + " Minutos");
+
+    if (tiempoRestanteKart < 0) {
+        clearInterval(funcionKart)
+        $("#diasKart").html("");
+        $("#horasKart").html("HOY");
+        $("#minutosKart").html("");
+    }
+},1000)
+
+
+
+

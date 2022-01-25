@@ -7,6 +7,10 @@
 
 //font-family: 'Poppins', sans-serif;
 //font-family: 'Rubik', sans-serif;
+nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
 
 .separador {
     font-family: 'Full Pack 2025';
@@ -21,9 +25,21 @@
 
 .titulo {
     font-family: 'Rubik';
-    font-size: 2rem;
+    font-size: 1.4rem;
+}
+
+.categoria {
+    @extend .titulo;
+    text-decoration: underline;
 }
 
 .contenido {
     font-family: 'Poppins';
+    font-size: 1.2rem;
+}
+
+.temporizador {
+    font-family: 'Poppins';
+    font-size: 1rem;
+    color: black;
 }
