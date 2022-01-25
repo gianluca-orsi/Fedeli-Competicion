@@ -1,0 +1,15 @@
+rossi:
+    insta: Santi_rossi29
+    twitter: SantiagoRossi69
+guri:
+    insta: ariel.santucho.505
+juampi :
+    insta: juan.gomez42
+    twitter: Juan_gomez42
+ramiro:
+    insta: rama_akd1
+    twitter: rama_akd1
+miguez: 
+    insta: Santii_miguez
+franco:
+    insta: Romagnoli942

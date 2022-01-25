@@ -1,6 +1,7 @@
 $("i").addClass("hvr-grow");
 $(".temporizador").addClass("is-inline-block");
 
+/* Temporizador prox carrera autos */
 var proxFechaAutos = new Date ("Mar 6, 2022, 00:00:00").getTime();
 var funcionAutos = setInterval(function(){
     var tiempoActual = new Date().getTime();
@@ -22,6 +23,7 @@ var funcionAutos = setInterval(function(){
     }
 },1000)
 
+/* Temporizador prox carrera kart */
 var proxFechaKart = new Date ("Mar 22, 2022, 00:00:00").getTime();
 var funcionKart = setInterval(function(){
     var tiempoActual = new Date().getTime();
@@ -42,7 +44,3 @@ var funcionKart = setInterval(function(){
         $("#minutosKart").html("");
     }
 },1000)
-
-
-
-
